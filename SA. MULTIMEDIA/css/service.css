@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-position: cover;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #b93333;
+    color: white;
+    font-size: larger;
+    padding: 0rem 2rem 0rem 2rem;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 1);
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo{
+    background-color: white;
+    padding: 0.5rem;
+}
+
+
+.header ul{
+    display: flex;
+    justify-items: space-around;
+    list-style: none;
+    gap: 4rem;
+    padding: 1rem;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover{
+    color: #b93333;
+    background-color: white;
+    padding: 1em 20%;
+}
+
+.workDays{
+    padding-right: 3rem;
+}
+
+.banner_2{
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(22, 22, 22, 0.8)), url(../img/aa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    
+  
+ 
+    
+}
+
+
+ .slider {
+    overflow: hidden;
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    
+ 
+  } 
+  
+  .slider .slide {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slide 50s infinite;
+    
+  }
+  
+  .slider .slide:nth-child(1) {
+    background-image: url(../img/gg.jpeg);
+    animation-delay: -10;
+  }
+  
+  .slider .slide:nth-child(2) {
+    background-image: url(../img/ff.jpeg);
+    animation-delay: -20s;
+  }
+    
+  .slider .slide:nth-child(3) {
+    background-image: url(../img/build.jpg);
+    animation-delay: -30s;
+  }
+
+  .slider .slide:nth-child(4) {
+    background-image: url(../img/ee.jpg);
+    animation-delay: -40s;
+}
+
+.slider .slide:nth-child(5) {
+    background-image: url(../img/hh.jpg);
+    animation-delay: -45s;
+}
+ 
+  
+  @keyframes slide {
+    0%, 15%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    95% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+
+}
+  }
+
+.service{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    padding-top: 0.5rem;
+    margin: 5rem 5rem 10rem 5rem;
+    margin-top: -4rem;
+    background: white;
+    border-top: 5px solid #b93333;
+    position: absolute;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.8), 0 7px 7px 0 rgba(0, 0, 0, 0.8);
+    
+   
+    
+  
+}
+
+
+.service h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    display: inline-block;
+    align-items: center;
+    margin-bottom: px;
+    color: #b93333;
+    text-transform: uppercase;
+}
+
+h4{
+    color: #b93333;
+    padding-top: 5px;
+}
+
+/* mainpage */
+
+.main{
+    background-color: rgb(255, 255, 255);
+    background: url(../img/dark.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #b93333;
+
+    
+}
+
+.main1{
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 8rem 2rem 2rem 2rem ;
+    overflow: hidden;
+
+
+
+}
+
+.main img{
+    margin-top: -20rem;
+}
+
+.web-design, .hosting, .maintenance1, .sHosting{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.1), 0 7px 7px 0 rgba(0, 0, 0, 0.1);
+
+
+}
+
+.web-services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  
+
+}
+
+.web-services p{
+    text-align: justify;
+}
+
+.web-services h1{
+    text-align: center;
+    padding: 10px;
+    color: #b93333;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.web-services h3{
+    text-align: center;
+    padding: 10px;
+    color: #b93333;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+
+.other-service{
+    text-align: center;
+    padding: 2rem;
+    color: #b93333;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    margin-top: 5px;
+    position: absolute;
+    margin: 29rem 8rem 10rem 10rem;
+    line-height: 2rem;
+    list-style-type: circle;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.8), 0 7px 7px 0 rgba(0, 0, 0, 0.8);}
+
+.other-service h1{
+    padding-bottom: 1rem;
+    font-weight: bolder;
+}
+
+.other-service li{
+   list-style-type: square;
+}
+
+.courses{
+    background-color: white;
+    background: url(../img/kkk.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -2rem;
+}
+
+.course-outline{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px,1fr));
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    padding: 2rem;
+    margin: 2rem;
+
+
+}
+
+
+.class{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem; 
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.1), 0 7px 7px 0 rgba(0, 0, 0, 0.1);
+    cursor: all-scroll;
+} 
+
+.class:hover{
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.8), 0 7px 7px 0 rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+
+}
+
+
+.courses img{
+    border-radius: 50%;
+    width: 50%;
+    height: 10rem;
+    margin-top: -5rem;
+    border: 3px solid grey;
+}
+
+.courses p{
+    padding: 1rem;
+}
+
+.courses{
+    gap: 2rem;
+
+}
+
+.courses h1{
+    color: #b93333;
+    text-align: center;
+}
+
+#bt{
+    background-color: #b93333;
+    color: white;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+
+
+
+
+
+
+.ruler{
+    display: flex;
+    /* margin-top: -5rem; */
+    justify-content: left;
+    
+}
+
+.ruler1, .ruler2, .ruler3{
+    display: flex;
+    flex-direction: start;
+    background-color: red;
+    padding: 0.2rem;
+    border-radius: 50%;
+} 
+
+.ruler2{
+    background-color: rgb(255, 174, 0); 
+}
+
+.ruler3{
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+/* footer */
+
+button {
+    
+    border-radius: 5px;
+    background-color: #b93333;
+    font-weight: bolder;
+    color: white;
+    font-size: 15pt;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+    width: 26.5rem;
+
+}
+
+
+
+
+input{
+    width: 25rem;
+    padding: 0.7rem;
+    margin-top: 15px;
+}
+
+.infor{
+    background-color: #b93333;
+    justify-content: center;
+    padding: 2rem;
+    width: auto;
+    line-height: 2rem;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    
+}
+
+.infor .icon{
+    font-size: 20pt;
+    column-gap: 100px;
+    padding: 1rem;
+    margin-left: -1rem;
+}
+
+.infor .icon:hover{
+    color: #000000;
+
+}
+    
+
+.sponsors{
+    line-height: 2.4rem;
+    
+}
+
+li{
+    list-style: none;
+    text-align: left; 
+
+   
+}
+
+.message{
+    text-align: center;
+   
+    
+}
+input{
+    width: fit-content;
+    border-radius: 7px;
+}
+.subject{
+    width: 23rem;
+}
+
+textarea{
+    margin-top: 1em;
+    width: 24.5rem;
+    border-radius: 7px;
+    
+}
+.submit{
+    width: 100px;
+    border-radius: 15px;
+    background-color: #b93333;
+    font-weight: bolder;
+    color: white;
+    font-size: 10pt;
+    padding: 0.7rem;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+
+}
+
+.submit:hover{
+    transform: scale(1.02);
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.8), 0 7px 7px 0 rgba(0, 0, 0, 0.8);
+    color: #b93333;
+    background-color: white;
+}
+
+.footer{
+    background-color: #b93333;
+    color: white;
+    text-align: center;
+    border-top: solid;
+    border-color: white;
+    border-top-width: 1px;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 425px){
+    .card1, .card2, .card3{
+        -ms-flex-line-pack: end;
+       
+    
+       
+    }
+}
